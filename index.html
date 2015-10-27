@@ -1,8 +1,52 @@
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta lang="de">
 	<title>Höhere Mathematik 3 Zufallszahlengenerator</title>
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/random.css">
 </head>
 <body>
-	<p>Hello Wolrd</p>
+
+
+<div class="container">
+	<div id="inputs" class ="form-group container">
+		<h3 class="page-title">'Random' number generator</h3>
+		<div class="col-xs-12 col-sm-4">
+			<label>Quantity</label>
+			<input class = "form-control" type="number" id="random-quantity" placeholder="Quantity" value="2">
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<label>Minimum</label>
+			<input class = "form-control" type="number" id="random-range-begin" placeholder="Min" value="0">
+		</div>
+		<div class="col-xs-12 col-sm-4">
+			<label>Maximum</label>
+			<input class = "form-control" type="number" id="random-range-end" placeholder="Max" value="10">
+			</div>
+		
+		<div class=" col-xs-12">
+			<button class = "btn btn-default" onclick="HM3RandomTable.deploy()">
+				<i class="glyphicon glyphicon-plus"></i>
+				Generate
+			</button>
+			<button class = "btn btn-default" onclick="HM3RandomTable.print()">
+				<i class="glyphicon glyphicon-print"></i>
+				Print
+			</button>
+		</div>
+
+	</div>
+
+	<div id="random-table" class="row">
+
+	</div>
+</div>
+
+
+	<script type="text/javascript" src = "js/random.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
