@@ -19,13 +19,12 @@
 .random-number {
 	border-width: 1px;
 	border-style: solid;
-	border-right-style: none;
 	padding: 1em;
 	text-align: center;
 	color:red;
 	font-weight: bolder;
 }
-.random-number:last-child{
+/*.random-number:last-child{
 	border-right-style: solid;
 }
-}
+*/}
